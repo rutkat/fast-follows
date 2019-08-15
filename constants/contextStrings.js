@@ -1,5 +1,7 @@
 // Variables used in background.js
 const MSG_ID_QUERY = 'query';
+const EXT_UPDATE = 'update'
+const EXT_INSTALL = 'install'
 
 const contextMenuItem = {
   'id': MSG_ID_QUERY,
@@ -14,7 +16,7 @@ const noticeNotFound = {
   type: 'basic',
   iconUrl: 'images/icon-64.png',
   title: 'Fast Follow!',
-  message: 'Users not found on this page.'
+  message: 'Users who you do not follow arecd  not found on this page.'
 }
 // clone object to later overwrite message key
 const noticeFound = noticeNotFound;

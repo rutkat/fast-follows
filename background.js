@@ -17,6 +17,11 @@ chrome.runtime.onMessage.addListener(gotMessage);
 
 // when the extension is first installed
 chrome.runtime.onInstalled.addListener(function(status) {
+
+  if (status.reason === EXT_INSTALL) {
+    chrome.tabs.create({url: 'help.html'});
+  }
+
 });
 
 // run a script when tab is reloaded
