@@ -16,7 +16,7 @@ const noticeNotFound = {
   type: 'basic',
   iconUrl: 'images/icon-64.png',
   title: 'Fast Follow!',
-  message: 'Users who you do not follow arecd  not found on this page.'
+  message: 'Users who you do not follow are are not found on this page.'
 }
 // clone object to later overwrite message key
 const noticeFound = noticeNotFound;
