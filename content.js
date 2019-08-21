@@ -1,7 +1,6 @@
 // file also includes variables from 'constants/domainList.js'
 window.onload = init();
 function init() {
-
   const activeDomain = ((new URL(document.location.href)).hostname).replace('www.', '');
 
   // follower placeholder
