@@ -69,33 +69,4 @@ function gotMessage(msg, sender, sendResponse) {
     chrome.notifications.create(noticeFollowed);
   }
 
-  // if (msg.syncStorage === true) {
-  //   let utcToday = new Date().toJSON().slice(0,10);//.replace(/-/g,'/');
-  //   let domainName = new URL(currentUrl).hostname;
-  //   const followState = {
-  //     [domainName]: {
-  //       'date': utcToday,
-  //       'followedCount': msg.integer
-  //     }
-  //   }
-  //   setStorage(followState);
-  // }
-}
-
-function setStorage(followState) {
-  if (!followState) return false;
-  // let key = Object.keys(followState)[0];
-console.log('setStorage() needs work. maybe use localstorage in content.js');
-  // chrome.storage.local.set({'medium':'test'});
-  // chrome.storage.sync.set(followState, function() {
-  // });
-
-  chrome.storage.sync.get('medium.com', function(result) {
-    console.log('Value currently is ' + result.key );
-    // exists
-    if (!!result.key) {
-
-    }
-  });
-
 }

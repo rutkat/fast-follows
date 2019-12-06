@@ -8,11 +8,11 @@ const DOMAIN_LIST = [
 ];
 
 const FOLLOW_SELECTORS = {
-  'twitter.com': '[role="button"][data-testid$="-follow"]', // tested
-  'soundcloud.com': '.sc-button-follow.sc-button:not(.sc-button-selected)', // tested
-  'medium.com': '.button--follow:not(.is-touched)', // tested
-  'quora.com': '.UserConnectionsFollowersList .ui_button--PillStyle', // tested
-  'pinterest.com': '.RCK.Hsu.mix', //
+  'twitter.com': '[role="button"][data-testid$="-follow"]',
+  'soundcloud.com': '.sc-button-follow.sc-button:not(.sc-button-selected)',
+  'medium.com': '.button--follow:not(.is-touched)',
+  'quora.com': '.UserConnectionsFollowersList .ui_button--PillStyle',
+  'pinterest.com': '.RCK.Hsu.mix',
   'linkedin.com': '.js-discover-person-card__action-btn'
 }
 
