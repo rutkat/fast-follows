@@ -7,16 +7,9 @@ function init() {
   let elements = '';
   let messageState = {
     'integer': 0,
-    'syncStorage': true, // not working
     'domainName': activeDomain,
     'update': false
   };
-
-  // xxx faulty to run once on load
-  // elements = document.querySelectorAll(FOLLOW_SELECTORS[activeDomain]);
-  // xxx update object with element count
-  // messageState.integer = elements.length;
-  // chrome.runtime.sendMessage(messageState);
 
   chrome.runtime.onMessage.addListener(receiveMsg);
 
@@ -51,10 +44,8 @@ function init() {
     let following = 0;
     // set threshold for loop
     for (let i = 0; i < amountAllowed; i++) {
-      // users[i].click();
-      // (function(user) {
+
       (user => {
-        // setTimeout(() => console.log(user), TIMER_DELAY); // debug
         setTimeout(() => user.click(), TIMER_DELAY)
       })(users[i]);
       following++;
