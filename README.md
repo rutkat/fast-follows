@@ -1,8 +1,7 @@
 
-[Fast Follows ](https://chrome.google.com/webstore/detail/) boost your follows on several websites.
+[Fast Follows ](https://chrome.google.com/webstore/detail/fast-follows/cafemfapekdlffilmheplelhnjljfkoe) boost your follows on several websites.
 
-[Install the extension.](https://chrome.google.com/webstore/detail/)
-
+A chrome extension developed to automate follows on social media websites.
 
 ### License
 Mozilla Public License Version 2.0
